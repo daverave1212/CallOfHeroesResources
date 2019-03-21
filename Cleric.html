@@ -1,0 +1,297 @@
+﻿<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <title></title>
+</head>
+<body>
+
+
+<div class="Class">
+	<h2 class="Name">Cleric</h2>
+	<p class="DescriptionPar">Clerics are people attuned to a certain god.</p>
+</div>
+<div class="Options">
+	<h3 class="OptionsHeader">When creating your character:</h3>
+	<p class="ChoicePar">Choose 2 of these, and increase them by 1: Charisma, Intelligence, Wisdom, Dexterity, Fortitude</p>
+	<p class="ChoicePar">Choose one: +1 Weapon Effect or +2 Spell DC</p>
+	<p class="ChoicePar">Choose one: +2 Fortitude Save or +2 Dexterity Save</p>
+</div>
+<div class="Skills">
+	<h3 class="SkilsHeader">You gain the following skills:</h3>
+	<p class="SkillsPar">You have +1 Religion, +1 Luck, +1 Insight</p>
+	<p class="SkillsPar">You have -1 Biology, -1 Investigation, -1 Deception</p>
+</div>
+<div class="Language">
+	<p class="LanguagePar">If your Intelligence is at least 2, choose one Higher or Common language you can speak.</p>
+</div>
+<div class="Stats">
+	<p class="StatsPar">Base Health: 7 + (Fortitude x 2)</p>
+	<p class="StatsPar">Bonus Health when leveling up: +5</p>
+</div>
+<div class="MainStat">
+	<div class="MainStatPart">
+		<p class="MainStatParagraph">Choose between Wisdom or Charisma. This is your Main Stat.</p>
+	</div>
+	<div class="MainStatPart">
+		<p class="MainStatParagraph">Your Spell DC is 8 + (Main Stat).</p>
+		<p class="MainStatParagraph">Your Spell Hit Bonus is (Main Stat).</p>
+	</div>
+	<div class="MainStatPart">
+		<p class="MainStatParagraph">You are Trained in Spells.</p>
+		<p class="MainStatParagraph">Some spells will tell you to add your Power to the damage dice.</p>
+		<p class="MainStatParagraph">Your Race tells you what your Power is.</p>
+	</div>
+	<div class="MainStatPart">
+		<p class="MainStatParagraph">You have 3 Charges: O O O</p>
+		<p class="MainStatParagraph">Certain Abilities require you to spend one Charge.</p>
+		<p class="MainStatParagraph">You regain all Charges back when you Long Rest.</p>
+	</div>
+</div>
+<div class="ClassAbilities">
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Loyalty</span> : <span class="SpellActions">Special</span></h4>
+			<p class="SpellDescription">You have a special score called Loyalty.<br>You start with 2 Loyalty.<br>Special Cleric abilities influence your Loyalty once you get them.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Power of a God</span> : <span class="SpellActions">0 Actions</span></h4>
+			<p class="SpellDescription">Invoke the power of your god.<br>Instantly heal or damage a target for an amount equal to your Loyalty.<br>3 meters range.<br>You can do this once per Long Rest.</p>
+		</div>
+	</div>
+</div>
+<div class="Other">
+	<div class="OtherPart">
+		<p>The first time you choose a cleric domain (specialization), you must choose between two abilities.</p>
+		<p>For example, for Battle Cleric, you have to choose either March Ahead or Piety.</p>
+		<p>Choose wisely...</p>
+	</div>
+</div>
+<div class="Spec">
+	<div class="SpecPart">
+		<p>Battle Cleric</p>
+		<p>Battle clerics specialize in conditions of war. You must choose your side</p>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Chains</span> : <span class="SpellActions">1 Action</span></h4>
+			<p class="SpellDescription">Spend 1 Charge and choose a target within 6 meters.<br>The target is healed for 1d12.<br>Then, it makes a Wisdom Save.<br>If it fails, it is Paralyzed for 1 minute.<br>You can do this once per Long Rest.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">March Ahead</span> : <span class="SpellActions">0 Actions</span></h4>
+			<p class="SpellDescription">Loyalty : +1<br>This turn, you can move more meters equal to your Loyalty.<br>You can do this once per Long Rest.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Piety</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty : +3</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Eternal Bindings</span> : <span class="SpellActions">0 Actions or Reaction</span></h4>
+			<p class="SpellDescription">Loyalty: +1<br>Spend 1 Charge.<br>A creature within 3 meters makes a Wisdom save.<br>If it fails, it becomes magically bound to an object within 3 meters of it and can't willingly move more than 3 meters away from that object.<br>The creature can roll the save again at the start of their turn to escape the binding.<br>Lasts up to 1 minute.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Heavy Burden</span> : <span class="SpellActions">0 Actions</span></h4>
+			<p class="SpellDescription">Loyalty: +2<br>Spend 1 Charge.<br>A creature within 3 meters makes a Wisdom save.<br>If it fails, it is Crippled.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Pain of War</span> : <span class="SpellActions">0.5 Actions</span></h4>
+			<p class="SpellDescription">Loyalty: +1<br>Spend 1 Charge.<br>You gather divine energy to inflict heavy pain upon creatures in your surroundings.<br>All creatures within 3 meters of you take 4 True damage.<br>If a creature can't feel pain, it is unaffected.<br>Creatures affected can tell you did this...</p>
+		</div>
+	</div>
+</div>
+<div class="Spec">
+	<div class="SpecPart">
+		<p>Beacon Cleric</p>
+		<p>As a cleric, you become a devotee of darkness or/and light.</p>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Grasp</span> : <span class="SpellActions">0.5 Actions</span></h4>
+			<p class="SpellDescription">Pick a target within 6 meters (you don't need line of sight).<br>That target does not benefit from partial cover for 1 minute.<br>You can do this once per Long Rest.</p>
+		</div>
+	</div>
+	<div class="SpecPart">
+		<p>Choose one of the following:</p>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Radiance</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty : +1<br>At all times, you radiate light in a 3 meter radius.<br>You can turn this on and off at will.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Twilight</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty : +1<br>You have Dark Vision.<br>You are immune to being Blinded.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Let There Be Light</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty: +1<br>When you cast Grasp, you also deal 1d10 Fire damage to the target.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Let There Be Darkness</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty: +0<br>When using Power of a God on an enemy, it also rolls a Wisdom save.<br>If it fails, it is Blinded.<br>When using Power of a God on an ally, it gains Dark Vision for up to 10 minutes.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Mass Grasp</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty: +2<br>Grasp now affects all enemies within 6 meters instead of just 1 target.</p>
+		</div>
+	</div>
+</div>
+<div class="Spec">
+	<div class="SpecPart">
+		<p>Soul Cleric</p>
+		<p>You are a worshipper of life and/or death. Seek their balance, and seek balance within yourself.</p>
+	</div>
+	<div class="SpecPart">
+		<p>Life/Death</p>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Life Cycle</span> : <span class="SpellActions">0.5 Actions</span></h4>
+			<p class="SpellDescription">Transfer 6 health from a willing living creature to another willing living creature.<br>Both creatures must be within 3 meters of you.</p>
+		</div>
+	</div>
+	<div class="SpecPart">
+		<p>Choose one of the following:</p>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Keeper of Life</span> : <span class="SpellActions">0 Actions</span></h4>
+			<p class="SpellDescription">Loyalty : +1<br>Choose an ally.<br>The next time it takes damage, you take that damage instead.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Keeper of Death</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty : +1<br>Your attacks deal +1d6 damage against Undead once per turn.<br>You are immune to being Feared.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">True Necromancy</span> : <span class="SpellActions">1 Action</span></h4>
+			<p class="SpellDescription">Loyalty: +1<br>You have an Undead servant, a creature previously alive whose soul you are forcing to stay in this world against its will and do your bidding.<br>Come up with a story about why you have an Undead servant, and why your god allowed this or gave him or her to you.<br>_For example, your servant was in a group of cultists who killed your family. Now, your god gave you the power to resurrect one of these cultists to aid you in killing the rest of the cult._<br>Your servant must follow your orders as long as it is related to the reason you are forcing it to stay.<br>The servant must be a sentient humanoid and must be within 15 meters of you at all time, otherwise it will permanently lose 1 Maximum health for each hour spent apart.<br>It has the following stats:<br>Health: 1/3 of your maximum health<br>Armor: Same as yours, but -1<br>Stats: All 0, except one which is 2 (you choose which).<br>Movement: 5 meters<br>Initiative: Always equal to yours, and takes its turn before or after you (you choose every time).<br>It can use 1 Action to make a melee attack on its turn: +3 to hit, 1d8 Force or Necrotic damage<br>The servant can take 0.5 Actions, but only for simple, non-combat tasks.<br>In addition, when getting your servant, choose one of the following abilities for it:</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Marksmanship</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">The servant can shoot a bow, crossbow or any other ranged weapon.<br>Its attacks have up to 6 meters range.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Magic</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Your servant's attacks can be magical spells.<br>When getting this, choose from Fire/Cold/Thunder.<br>Its attacks can now deal that type of damage and have up to 3 meters range.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Maneuverist</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Your servant knows two Maneuvers from the Maneuver List which take 1 Action.<br>Same rules for Resting/Long Resting/Death apply to your servant as to Heroes, and your servant is treated as a Hero for ability purposes.<br>If the servant really dies, it is released from this world.<br>Tip: Just because he or she is your servant, that doesn't mean you should treat him or her as a pet or a slave. Think of creative ways to build the relationship between you and your servant.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Life Harvest</span> : <span class="SpellActions">Passive</span></h4>
+			<p class="SpellDescription">Loyalty: +2<br>Whenever YOU kill a worthy enemy, heal for 2 Health.</p>
+		</div>
+	</div>
+	<div class="Spell">
+		<div class="SpellIconWrapper">
+			<img class="SpellIcon" src="None.png">
+		</div>
+		<div class="SpellText">
+			<h4 class="SpellTitle"><span class="SpellName">Prayer of Life</span> : <span class="SpellActions">1 Action</span></h4>
+			<p class="SpellDescription">Loyalty: +2<br>Heal an ally within 6 meters for 50% of their total health.<br>You can do this only once in your life.<br>Variant: If you are playing a short campaign or one-shot, your DM can decide for 25% instead of 50%.</p>
+		</div>
+	</div>
+</div>
+
+﻿</body>
+</html>
